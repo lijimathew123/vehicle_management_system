@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Vehicle</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/update_vehicle.css' %}">
+</head>
+<body>
+    <div class="update-container">
+        <h2 class="update-title">Update Vehicle</h2>
+        <form method="post" class="update-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Update" class="update-button">
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

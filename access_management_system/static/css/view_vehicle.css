@@ -1,0 +1,64 @@
+
+.activity {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between; /* Create space between left and right elements */
+}
+
+.left-buttons {
+    display: flex;
+    margin-left: 10px;
+}
+
+.right-button {
+    margin-left: auto; /* Push the right button to the right side */
+}
+
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Style table header */
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style table rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style table actions (buttons) */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: #fff;
+}
+h2{
+    text-align: center;
+    font-weight: 700;
+
+}

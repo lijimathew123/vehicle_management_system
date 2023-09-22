@@ -1,0 +1,67 @@
+{% include 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Vehicle</title>
+    <style>
+        /* Internal CSS for styling the Delete Vehicle page */
+        body {
+            background-color: #f7f7f7;
+        }
+
+        div {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 400px;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #d80d0d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ce3c10;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Delete Vehicle!!</h2>
+        <p>Are you sure you want to delete the vehicle <b>"{{ vehicle.vehicle_number }}"</b>?</p>
+        <form method="post">
+            {% csrf_token %}
+            <input type="submit" value="Confirm Delete">
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

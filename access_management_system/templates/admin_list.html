@@ -1,0 +1,45 @@
+<!-- admin_user_list.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/admin_list.css' %}">
+</head>
+<body>
+    <h2>Admin  List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in admin %}
+            <tr>
+                <td>{{ user.name }}</td>
+                <td>{{user.email}}</td>
+                <td>{{ user.username }}</td>
+                <td>
+                    <a class="btn btn-danger" href="{% url 'delete_admin' user.id %}">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">No admin users found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <a class="add_admin"  href="{% url 'add_admin' %}">Add Admin</a>
+</body>
+</html>
+{% endblock %}

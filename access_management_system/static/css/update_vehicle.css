@@ -1,0 +1,74 @@
+/* CSS for alternative styling of the Update Vehicle page */
+.update-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.update-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.update-form input[type="text"],
+.update-form input[type="password"],
+.update-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+.update-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for labels */
+.update-form label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for submit button */
+.update-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.update-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add a container to center the form */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
