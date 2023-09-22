@@ -18,7 +18,7 @@ Role-Based Access: Different levels of access and permissions based on user role
 
 User-Friendly Interface: An intuitive and user-friendly interface that simplifies navigation and data entry.
 
-## Instalation
+## Installation
 
 1. clone repository
 2. Change directory to the project folder:    cd your-project/
